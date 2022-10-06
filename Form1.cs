@@ -35,7 +35,8 @@ namespace SouboryBin01
             while(!streamReader.EndOfStream)
             {
                 string line = streamReader.ReadLine();
-                br.Write(line);
+                int cislo = int.Parse(line);
+                br.Write(cislo);
             }
             fs.Close();
             streamReader.Close();
